@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1437DF4F21006F7D004CF3CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1437DF4E21006F7D004CF3CF /* GoogleService-Info.plist */; };
 		14E62BD520FF79590000DC0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E62BD420FF79590000DC0F /* AppDelegate.swift */; };
 		14E62BD720FF79590000DC0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E62BD620FF79590000DC0F /* ViewController.swift */; };
 		14E62BDA20FF79590000DC0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E62BD820FF79590000DC0F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1437DF4E21006F7D004CF3CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		14E62BD120FF79590000DC0F /* FirebaseSocialLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseSocialLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E62BD420FF79590000DC0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E62BD620FF79590000DC0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				14E62BDB20FF795D0000DC0F /* Assets.xcassets */,
 				14E62BDD20FF795D0000DC0F /* LaunchScreen.storyboard */,
 				14E62BE020FF795D0000DC0F /* Info.plist */,
+				1437DF4E21006F7D004CF3CF /* GoogleService-Info.plist */,
 			);
 			path = FirebaseSocialLogin;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1437DF4F21006F7D004CF3CF /* GoogleService-Info.plist in Resources */,
 				14E62BDF20FF795D0000DC0F /* LaunchScreen.storyboard in Resources */,
 				14E62BDC20FF795D0000DC0F /* Assets.xcassets in Resources */,
 				14E62BDA20FF79590000DC0F /* Main.storyboard in Resources */,
@@ -193,6 +197,8 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -200,6 +206,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -363,10 +371,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C8CYW7DN6;
 				INFOPLIST_FILE = FirebaseSocialLogin/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = seanlin.FirebaseSocialLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -383,10 +388,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C8CYW7DN6;
 				INFOPLIST_FILE = FirebaseSocialLogin/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = seanlin.FirebaseSocialLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
